@@ -23,7 +23,8 @@ ext {
 	set('snippetsDir', file("build/generated-snippets"))
 }
 
-val testcontainersVersion = "1.19.7"
+//val testcontainersVersion = "1.19.7"
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
@@ -35,11 +36,10 @@ dependencies {
 	implementation 'org.projectlombok:lombok'
 	
 	// Testcontainers
-    testImplementation("org.springframework.boot:spring-boot-testcontainers")
-    testImplementation("org.testcontainers:junit-jupiter")
-    testImplementation("org.testcontainers:postgresql")
-	// Ensure all testcontainers modules use the same version
-    testImplementation(platform("org.testcontainers:testcontainers-bom:${testcontainersVersion}")
+    	//testImplementation("org.springframework.boot:spring-boot-testcontainers")
+    	//testImplementation("org.testcontainers:junit-jupiter")
+    	//testImplementation("org.testcontainers:postgresql")
+	//testImplementation(platform("org.testcontainers:testcontainers-bom:${testcontainersVersion}")
 	
 	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation 'com.h2database:h2'
