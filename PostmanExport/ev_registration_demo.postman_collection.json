@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "cc48ff89-5aa4-46f3-867a-99e2b53c5d8b",
+		"name": "ev_registration_demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44484837",
+		"_collection_link": "https://long-8567269.postman.co/workspace/Long's-Workspace~f48d2722-524c-493f-8342-a882da2d4412/collection/44484837-cc48ff89-5aa4-46f3-867a-99e2b53c5d8b?action=share&source=collection_link&creator=44484837"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/v1/registrations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"dol_vehicle_id\":\"275305593\",\r\n\t\"vin_prefix\":\"7SAYGDEE4S\",\r\n\t\"make\":\"TESLA\",\r\n\t\"model\":\"MODEL Y\",\r\n\t\"model_year\":2025,\r\n\t\"electric_vehicle_type\":\"Electric Vehicle (BEV)\",\r\n\t\"county\":\"Thurston\",\r\n\t\"city\":\"Olympia\",\r\n\t\"state\":\"WA\",\r\n\t\"postal_code\":\"98501\",\r\n\t\"legislative_district\":\"22\",\r\n\t\"census_tract\":\"53067010400\",\r\n\t\"cafv_eligibility\":\"Eligibility unknown as battery range has not been researched\",\r\n\t\"electric_range\":0,\r\n\t\"base_msrp\":0,\r\n\t\"electric_utility_name\":\"PUGET SOUND ENERGY INC\",\r\n\t\"vehicle_location\":\"POINT (-122.89166 47.03956)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/registrations",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"registrations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/registrations/1234567",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/registrations/1234567",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"registrations",
+						"1234567"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/registrations/275305593",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/registrations/275305593",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"registrations",
+						"275305593"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

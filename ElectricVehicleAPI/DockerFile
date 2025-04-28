@@ -1,0 +1,12 @@
+FROM eclipse-temurin:21
+RUN mkdir /opt/app
+COPY --from=build /app/build/libs/ev-registration-api-*.jar app.jar
+# Expose the port the application runs on
+EXPOSE 8080
+
+# Environment variables for database connection
+ENV spring.datasource.url=jdbc:postgresql://localhost:5432/vehicles
+ENV spring.datasource.username=<user>
+ENV spring.datasource.password=<secret psswd>
+
+CMD ["java", "-jar", "/opt/app/japp.jar"]
