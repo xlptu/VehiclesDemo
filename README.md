@@ -50,7 +50,7 @@ CREATE TABLE if not exists veh_registrations (
 ```
 #To Run Locally:
 1.  Ensure postgres is up & running 
-2.  Clone down the `git@git.com`; branch main
+2.  Clone down the `https://github.com/xlptu/VehiclesDemo`; branch main
 3.  Modify postgres properties in application.yml to point to your postgres
 	a. spring.datasource:   URL; Username: Password  (keep in mind, cridential will be stored in Secret Manager / Vault for prod system)
 	b. Ensure the postgres user has appropriate privileges to create tables, etc.
